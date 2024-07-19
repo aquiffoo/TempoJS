@@ -1,16 +1,72 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    display: inline;
-}
-
-div {
-    width: 1px;
+    font-family: 'ZT Talk', Arial, Helvetica, sans-serif;
+    margin: 5px;
 }
 
 div#tempo {
-    margin: 500px;
-    background-color: rgb(174, 174, 218);
-    color: rgb(10, 27, 6);
-    border-radius: 15px;
+    border-radius: 20px;
+    background-color: cornsilk;
+    border-style: dashed;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div#tempo:hover {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-container input {
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: gray;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#parar, #comeca {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#parar:hover, #comeca:hover {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+
+#parar {
+    display: none;
 }

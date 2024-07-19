@@ -1,18 +1,28 @@
-<script src="app.js"></script>
-<link rel="stylesheet" href="style.css">
-
-<div id="tempo">
-    <div id="hora">
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TempoJS [REDUX]</title>
+</head>
+<body>
+    <h1>TempoJS [REDUX]</h1>
+    <div id="tempo">
+        <h1 id="loading">Escolha abaixo ⬇️</h1>
+        <div id="hora"></div>
+        <div id="minuto"></div>
+        <div id="segundo"></div>
     </div>
-    
-    <div id="minuto">
-    
+    <div class="input-container">
+        <input type="number" id="hora-input" placeholder="HH" min="0" max="23">
+        <input type="number" id="minuto-input" placeholder="MM" min="0" max="59">
+        <input type="number" id="segundo-input" placeholder="SS" min="0" max="59">
     </div>
-    
-    <div id="segundo">
-    
+    <div id="controls">
+        <div id="parar" onclick="parar()">Parar</div>
+        <div id="comeca" onclick="tempo(1)">Começar</div>
     </div>
-</div>
-<div id="parar"></div>
-<div id="comeca"></div>
+</body>
+</html>
